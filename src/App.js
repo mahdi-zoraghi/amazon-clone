@@ -1,16 +1,16 @@
 import { useEffect } from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
-import Header from "./Header"
-import Home from "./Home"
-import Checkout from "./Checkout"
-import Login from "./Login"
+import Header from "./components/Header"
+import Home from "./components/Home"
+import Checkout from "./components/Checkout"
+import Login from "./components/Login"
 
-import { useStateValue } from "./StateProvider"
+import { useStateValue } from "./store/StateProvider"
 
 import { auth } from "./firebase"
 
-import "./App.css"
+import "./App.scss"
 
 function App() {
   const [, dispatch] = useStateValue()

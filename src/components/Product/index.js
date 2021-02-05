@@ -1,8 +1,8 @@
 import { Star } from "@material-ui/icons"
 
-import { useStateValue } from "./StateProvider"
+import { useStateValue } from "../../store/StateProvider"
 
-import "./Product.css"
+import "./Product.scss"
 
 function Product({ id, title, price, rating, image }) {
   const [, dispatch] = useStateValue()

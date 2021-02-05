@@ -4,11 +4,11 @@ import {
   ShoppingBasket as ShoppingBasketIcon,
 } from "@material-ui/icons"
 
-import { useStateValue } from "./StateProvider"
+import { useStateValue } from "../../store/StateProvider"
 
-import { auth } from "./firebase"
+import { auth } from "../../firebase"
 
-import "./Header.css"
+import "./Header.scss"
 
 function Header() {
   const [{ basket, user }] = useStateValue()

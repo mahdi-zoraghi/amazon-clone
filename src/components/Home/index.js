@@ -1,6 +1,6 @@
-import Product from "./Product"
+import Product from "../Product"
 
-import "./Home.css"
+import "./Home.scss"
 
 function Home() {
   return (

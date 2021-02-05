@@ -2,10 +2,10 @@ import React from "react"
 import ReactDOM from "react-dom"
 
 import App from "./App"
-import { StateProvider } from "./StateProvider"
-import reducer, { initialState } from "./reducer"
+import { StateProvider } from "./store/StateProvider"
+import reducer, { initialState } from "./store/reducer"
 
-import "./index.css"
+import "./index.scss"
 
 ReactDOM.render(
   <StateProvider initialState={initialState} reducer={reducer}>

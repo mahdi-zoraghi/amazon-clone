@@ -1,9 +1,9 @@
-import { useStateValue } from "./StateProvider"
+import { useStateValue } from "../../store/StateProvider"
 
-import CheckoutProduct from "./CheckoutProduct"
-import Subtotal from "./Subtotal"
+import CheckoutProduct from "../CheckoutProduct"
+import Subtotal from "../Subtotal"
 
-import "./Checkout.css"
+import "./Checkout.scss"
 
 function Checkout() {
   const [{ basket }] = useStateValue()
